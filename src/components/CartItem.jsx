@@ -5,6 +5,7 @@ export default function CartItem({ product }) {
 
     const [, , , deleteItem] = useContext(CartContext);
 
+    //Elimina un elemento del carrito
     const handleDelete = () => {
         deleteItem(product.id); 
     };

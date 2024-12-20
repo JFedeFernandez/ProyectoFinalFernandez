@@ -7,7 +7,7 @@ import ItemCount from "./ItemCount";
 import {CartContext} from '../context/CartContext';
 import { getSingleProduct } from "../firebase/firebase";
 
-
+// Componente para mostrar el detalle de un producto.
 export default function ItemDetail() {
 
     const { id } = useParams();
@@ -18,10 +18,11 @@ export default function ItemDetail() {
     const [showItemCount, setShowItemCount] = useState(true);
     const [quantity, setQuantity] = useState(0);
 
+    // Hook useEffect para obtener el producto cuando cambia el 'id'.
     useEffect( () => {
         setLoading(true);
         if (id) {
-            getSingleProduct(id)
+            getSingleProduct(id) // Llama a la función para obtener el producto desde Firebase.
                 .then((prods) => setProduct(prods))
                 .catch((error) => console.error("Error fetching product:", error))
                 .finally(() => setLoading(false));
@@ -30,10 +31,11 @@ export default function ItemDetail() {
         }
     },[id])
 
+    // Función para manejar el evento de clic en el botón "Agregar al carrito"
     const hiddenClick = () => {
         if (quantity > 0) {
             addItem({ ...product, quantity, id:id });
-            setShowItemCount(false);
+            setShowItemCount(false);  // Oculta el componente 'ItemCount'
         }
     }
 

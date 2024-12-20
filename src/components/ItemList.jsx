@@ -5,15 +5,19 @@ import ClipLoader from "react-spinners/ClipLoader";
 import { useParams } from 'react-router-dom';
 import { filterProductsByCategory } from '../firebase/firebase';
 
+// Componente principal que muestra una lista de productos
 export default function ItemList() {
     const [filteredProducts, setFilteredProducts] = useState([]);
     const [products, , globalLoading,] = useContext(ProductsContext);
     const [loading, setLoading] = useState(true);
     const {categoryId} = useParams();
 
+    // Hook useEffect que se ejecuta cuando cambian 'categoryId' o 'products'
     useEffect( () => {
         setLoading(true);
         setFilteredProducts([]);
+
+        // Función asíncrona para obtener los productos según la categoría
         const fetchProducts = async () => {
             if (categoryId) {
                 try {
@@ -29,6 +33,7 @@ export default function ItemList() {
             setLoading(false); 
         };
 
+        // Si no hay productos en el contexto global, activa el estado de carga
         if (products.length === 0) {
             setLoading(true);
         } else {

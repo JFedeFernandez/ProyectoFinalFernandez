@@ -11,6 +11,7 @@ export default function CheckoutForm() {
     const [loading, setLoading] = useState(false);
     const [orderDetails, setOrderDetails] = useState({})
 
+    // Errores de validación de los campos del formulario.
     const [errors, setErrors] = useState({
         name: "",
         surname: "",
@@ -18,6 +19,7 @@ export default function CheckoutForm() {
         email: "",
     });
 
+    // Datos del formulario de compra.
     const [formData, setFormData] = useState({
         name:"",
         surname:"",
@@ -38,6 +40,7 @@ export default function CheckoutForm() {
         });
     }
 
+    // Maneja los cambios en los campos del formulario.
     const validateForm = () => {
         const newErrors = {};
         let valid = true;
@@ -82,12 +85,15 @@ export default function CheckoutForm() {
         return valid;
     };
 
-
+    // Maneja el clic en el botón de enviar.
     const handleClick =  async () => {
-        if (!validateForm()) return;
+        if (!validateForm()) return; // Si el formulario no es válido, no envía la orden.
         setLoading(true);
 
+        // Calcula el total de la compra sumando el precio de los productos en el carrito
         const totally = cart.reduce((acc, item) => acc + item.quantity * item.price, 0);
+        
+
         const filteredItems = cart.map((item) => ({
             id: item.id,
             price: item.price,
@@ -95,6 +101,7 @@ export default function CheckoutForm() {
             quantity: item.quantity,
         }));
 
+        // Crea un objeto con los detalles de la orden.
         const newOrder = {
             buyer: {
                 name: formData.name,

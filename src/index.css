@@ -54,6 +54,7 @@ header {
   flex-direction: column;
 }
 
+/* Comienzo itemListContainer */
 .itemListContainer {
   box-sizing: border-box;
   background: none 0% 0% / auto repeat scroll padding-box border-box rgba(0, 0, 0, 0);
@@ -150,20 +151,6 @@ header {
   font-weight: 400;
 }
 
-.div-price {
-  color: rgb(158, 158, 158);
-  font-size: 15px;
-  box-sizing: border-box;
-  margin-block: 0px 14.4px;
-  background: none 0% 0% / auto repeat scroll padding-box border-box rgba(0, 0, 0, 0);
-  orphans: 2;
-  widows: 2;
-  font-weight: 300;
-  text-align: center;
-  font-family: proxima-nova, sans-serif;
-  line-height: 22.5px;
-}
-
 .item-card p {
   box-sizing: border-box;
   background: none 0% 0% / auto repeat scroll padding-box border-box rgba(0, 0, 0, 0);
@@ -190,25 +177,13 @@ header {
   font-weight: 400;
 }
 
-.item-button {
-  width: 100px;
-  height: 40px;
-  background-color: black;
-  color: white;
-  border-style: none;
-  border-radius: 10px;
-}
+/* Fin del ItemListContainer */
 
-.item-button:hover {
-  background-color: white;
-  color: black;
-  border: 1px solid black;
-}
-
+/* Comienzo cartWidget */
 .cart-button {
   display: flex;
-  justify-content: center; /* Centra los elementos horizontalmente */
-  align-items: center; /* Centra los elementos verticalmente */
+  justify-content: center; 
+  align-items: center; 
 }
 
 .cart-button svg {
@@ -219,6 +194,9 @@ header {
   flex:1;
 }
 
+/* Fin cartWidget */
+
+/* Comienzo loader */
 .loader-container {
   display: flex;
   justify-content: center;
@@ -231,6 +209,7 @@ header {
   background-color: rgba(255, 255, 255, 0.8); 
   z-index: 1000; 
 }
+/*Fin loader */
 
 /* Comienzo de ItemDetail*/
 .itemDetailContainer {
@@ -283,41 +262,6 @@ header {
   text-transform: uppercase;
 }
 
-/* Fin de ItemDetail*/
-
-.buttons-count {
-  background-color: #000; /* Fondo negro */
-  color: #fff; /* Texto blanco */
-  border: 2px solid #000; /* Borde negro */
-  border-radius: 5px; /* Bordes redondeados */
-  width: 40px;
-  height: 40px;
-  font-size: 18px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-.buttoms-count {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px; /* Espacio entre los elementos */
-}
-
-.buttons-count:hover {
-  background-color: #fff; /* Fondo blanco al pasar el ratón */
-  color: #000; /* Texto negro al pasar el ratón */
-}
-
-.number-count {
-  font-size: 20px;
-  font-weight: bold;
-  color: #000; /* Texto negro */
-  margin: 0; /* Elimina márgenes por defecto */
-  text-align: center;
-}
-
 .buttom-cart{
   background-color: #000; 
   color: #fff; 
@@ -330,6 +274,44 @@ header {
   cursor: pointer; 
   transition: all 0.3s ease; 
 }
+
+/* Fin de ItemDetail*/
+
+/* Comienzo ItemCount */
+.buttons-count {
+  background-color: #000; 
+  color: #fff; 
+  border: 2px solid #000; 
+  border-radius: 5px; 
+  width: 40px;
+  height: 40px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.buttoms-count {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px; 
+}
+
+.buttons-count:hover {
+  background-color: #fff; 
+  color: #000; 
+}
+
+.number-count {
+  font-size: 20px;
+  font-weight: bold;
+  color: #000; 
+  margin: 0; 
+  text-align: center;
+}
+
+/* Fin ItemCount*/
 
 /*Comienzo estilos Cart*/
 .cart {
@@ -389,38 +371,38 @@ header {
 }
 
 .checkout-button {
-  background-color: #000; /* Fondo negro */
-  color: #fff; /* Texto blanco */
-  border: 2px solid #000; /* Borde negro */
-  border-radius: 5px; /* Bordes redondeados */
-  padding: 10px 20px; /* Espaciado interno */
-  font-size: 16px; /* Tamaño de fuente */
-  font-weight: bold; /* Fuente en negrita */
-  cursor: pointer; /* Cambiar cursor al pasar por encima */
-  transition: background-color 0.3s ease, transform 0.2s ease; /* Transiciones suaves */
-  text-align: center; /* Centrar el texto */
+  background-color: #000; 
+  color: #fff; 
+  border: 2px solid #000; 
+  border-radius: 5px; 
+  padding: 10px 20px; 
+  font-size: 16px; 
+  font-weight: bold; 
+  cursor: pointer; 
+  transition: background-color 0.3s ease, transform 0.2s ease; 
+  text-align: center; 
   display: inline-block;
 }
 
-/* Cambio de color al pasar el mouse */
+
 .checkout-button:hover {
-  background-color: #555; /* Gris oscuro */
-  border-color: #555; /* Borde gris */
+  background-color: #555; 
+  border-color: #555; 
 }
 
-/* Cambio de color al hacer clic */
+
 .checkout-button:active {
-  background-color: #333; /* Gris más oscuro */
-  border-color: #333; /* Borde gris oscuro */
-  transform: scale(0.98); /* Efecto de presión al hacer clic */
+  background-color: #333; 
+  border-color: #333; 
+  transform: scale(0.98); 
 }
 
-/* Deshabilitar botón si no está disponible */
+
 .checkout-button:disabled {
-  background-color: #ccc; /* Fondo gris claro */
-  color: #666; /* Texto gris */
-  border-color: #ccc; /* Borde gris claro */
-  cursor: not-allowed; /* Cambiar el cursor */
+  background-color: #ccc; 
+  color: #666; 
+  border-color: #ccc; 
+  cursor: not-allowed; 
 }
 
 /*Comienzo estilos form*/

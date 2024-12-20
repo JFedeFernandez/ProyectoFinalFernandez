@@ -4,6 +4,8 @@ import {IoCart} from 'react-icons/io5';
 
 export default function CartWidget () {
     const [cart] = useContext(CartContext);
+
+    //Calcula la cantidad total de artículos en el carrito
     const totalQuantity = cart.reduce((acc, item) => acc + item.quantity, 0);
     
     return (

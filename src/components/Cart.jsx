@@ -10,6 +10,7 @@ export default function Cart() {
     const [total, setTotal] = useState(0);
     const navigate = useNavigate();
 
+    //Calcula el total de los precios de los productos en el carrito
     const calcTotal = () => {
         const totalAmount = cart.reduce((acc, item) => acc + item.quantity * item.price, 0);
         setTotal(totalAmount);
