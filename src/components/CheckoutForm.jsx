@@ -1,7 +1,7 @@
 import { useContext, useState } from "react";
-import { sendOrder, updateDocuments } from "../firebase/firebase";
-import { CartContext } from "../context/CartContext";
-import {ProductsContext} from '../context/ProductContext';
+import { sendOrder, updateDocuments } from "../firebase/firebase.js";
+import { CartContext } from "../context/CartContext.jsx";
+import {ProductsContext} from '../context/ProductContext.jsx';
 import ClipLoader from 'react-spinners/ClipLoader';
 
 export default function CheckoutForm() {

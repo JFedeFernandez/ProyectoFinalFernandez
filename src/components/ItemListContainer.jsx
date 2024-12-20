@@ -1,4 +1,4 @@
-import ItemList from './ItemList';
+import ItemList from './ItemList.jsx';
 
 export default function ItemListContainer() {
   return (

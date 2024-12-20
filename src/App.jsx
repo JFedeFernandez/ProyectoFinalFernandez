@@ -1,11 +1,11 @@
-import NavBar from './components/NavBar';
+import NavBar from './components/NavBar.jsx';
 import { BrowserRouter, Routes, Route} from 'react-router-dom';
-import { ProductsProvider } from './context/ProductContext';
-import ItemListContainer from './components/ItemListContainer';
-import ItemDetailContainer from './components/ItemDetailContainer';
-import Cart from './components/Cart';
-import { CartProvider } from './context/CartContext';
-import CheckoutForm from './components/CheckoutForm';
+import { ProductsProvider } from './context/ProductContext.jsx';
+import ItemListContainer from './components/ItemListContainer.jsx';
+import ItemDetailContainer from './components/ItemDetailContainer.jsx';
+import Cart from './components/Cart.jsx';
+import { CartProvider } from './context/CartContext.jsx';
+import CheckoutForm from './components/CheckoutForm.jsx';
 
 function App() {
   return (

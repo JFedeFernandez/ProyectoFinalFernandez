@@ -1,6 +1,6 @@
 import { useContext, useState, useEffect } from "react";
-import CartItem from "./CartItem";
-import { CartContext } from "../context/CartContext";
+import CartItem from "./CartItem.jsx";
+import { CartContext } from "../context/CartContext.jsx";
 import { useNavigate } from "react-router-dom";
 import ClipLoader from 'react-spinners/ClipLoader';
 
