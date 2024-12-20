@@ -72,3 +72,6 @@ Añade spinners y animaciones de carga a la aplicación.
 
 3. **Ejecutar la aplicación**
 -   `npm run dev`
+
+## App en netlify
+- (https://lacelestina.netlify.app/)
