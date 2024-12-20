@@ -1,9 +1,36 @@
-# React + Vite
+# Proyecto Final - CoderHouse
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este es el proyecto final para el curso de React en CoderHouse. El objetivo del proyecto es desarrollar una aplicación web ecommerce utilizando React.
 
-Currently, two official plugins are available:
+## Tecnologías Utilizadas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-# ProyectoFinalFernandez
+- **React**: Biblioteca de JavaScript para construir interfaces de usuario.  
+- **Vite**: Herramienta de construcción rápida para proyectos web modernos.  
+- **JavaScript**: Lenguaje de programación principal utilizado.  
+- **CSS**: Para el estilizado de la aplicación.  
+- **HTML**: Estructura básica de la aplicación.  
+
+## Estructura del Proyecto
+
+- **public/**
+- **src/** 
+  - **components/**  
+  - **assets/**  
+  - **App.jsx** 
+  - **main.jsx** 
+- **package.json**  
+- **vite.config.js**
+- **.gitignore** 
+- **README.md**
+
+## Instalación y Ejecución
+
+1. **Clonar el repositorio**:  
+   git clone https://github.com/JFedeFernandez/ProyectoFinalFernandez.git
+   cd ProyectoFinalFernandez
+
+2. **Instalar Dependencias**:
+    npm install
+
+3. **Ejecutar la aplicación**:
+    npm run dev
