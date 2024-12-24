@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import '../Item/styled.css';
 
 export default function Item({ product }){
 

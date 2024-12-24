@@ -1,11 +1,12 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { useContext } from "react";
-import { ProductsContext } from "../context/ProductContext.jsx";
+import { ProductsContext } from "../../context/ProductContext.jsx";
 import ClipLoader from 'react-spinners/ClipLoader';
-import ItemCount from "./ItemCount.jsx";
-import {CartContext} from '../context/CartContext.jsx';
-import { getSingleProduct } from "../firebase/firebase.js";
+import ItemCount from "../ItemCount/ItemCount.jsx";
+import {CartContext} from '../../context/CartContext.jsx';
+import { getSingleProduct } from "../../firebase/firebase.js";
+import '../ItemDetail/styled.css';
 
 // Componente para mostrar el detalle de un producto.
 export default function ItemDetail() {

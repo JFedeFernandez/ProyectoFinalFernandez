@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import { CartContext } from "../../context/CartContext.jsx";
 import {IoCart} from 'react-icons/io5';
+import '../CartWidget/styled.css';
 
 export default function CartWidget () {
     const [cart, setCart, addItem, deleteItem] = useContext(CartContext);

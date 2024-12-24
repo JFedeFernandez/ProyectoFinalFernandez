@@ -1,5 +1,6 @@
 import { useContext, useState } from "react";
 import { CartContext } from "../../context/CartContext.jsx";
+import '../ItemCount/styled.css';
 
 /** Componente que permite al usuario seleccionar la cantidad de un producto.
  * product: es el producto que se pasa como parametro, para tratarlo

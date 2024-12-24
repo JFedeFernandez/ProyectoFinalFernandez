@@ -1,9 +1,10 @@
 import { useContext, useEffect, useState } from 'react';
-import { ProductsContext } from '../../context/ProductContext.jsx';
+import { ProductsContext } from '../../context/ProductContext';
 import Item from '../Item/Item.jsx';
 import ClipLoader from "react-spinners/ClipLoader";
 import { useParams } from 'react-router-dom';
 import { filterProductsByCategory } from '../../firebase/firebase.js';
+import '../ItemList/styled.css';
 
 // Componente principal que muestra una lista de productos
 export default function ItemList() {

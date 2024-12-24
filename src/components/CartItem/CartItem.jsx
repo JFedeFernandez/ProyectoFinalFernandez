@@ -1,5 +1,6 @@
 import { useContext } from "react";
-import { CartContext } from "../context/CartContext.jsx";
+import { CartContext } from "../../context/CartContext.jsx";
+import "./styled.css";
 
 export default function CartItem({ product }) {
 
