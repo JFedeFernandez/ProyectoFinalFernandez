@@ -1,12 +1,12 @@
 import { useContext, useState, useEffect } from "react";
-import CartItem from "./CartItem.jsx";
+import CartItem from "../components/CartItem.jsx";
 import { CartContext } from "../context/CartContext.jsx";
 import { useNavigate } from "react-router-dom";
 import ClipLoader from 'react-spinners/ClipLoader';
 
 export default function Cart() {
     const [loading, setLoading] = useState(true);
-    const [cart,,, ] = useContext(CartContext);
+    const [cart, setCart, addItem, deleteItem] = useContext(CartContext);
     const [total, setTotal] = useState(0);
     const navigate = useNavigate();
 

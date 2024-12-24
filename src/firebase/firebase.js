@@ -9,20 +9,17 @@ import {
     query,
     where,
     addDoc,
-    updateDoc,
     writeBatch,
 } from 'firebase/firestore';
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-    apiKey: "AIzaSyAHW9LV8lfrR9kAq8zkgd3k1oe9FZZWyYM",
-    authDomain: "lacelestina-67be1.firebaseapp.com",
-    projectId: "lacelestina-67be1",
-    storageBucket: "lacelestina-67be1.firebasestorage.app",
-    messagingSenderId: "518580022152",
-    appId: "1:518580022152:web:8b856346ee3022da6aa83d"
+    apiKey: process.env.REACT_APP_apiKey,
+    authDomain: process.env.REACT_APP_authDomain,
+    projectId: process.env.REACT_APP_projectId,
+    storageBucket: process.env.REACT_APP_storageBucket,
+    messagingSenderId: process.env.REACT_APP_messagingSenderId,
+    appId: process.env.REACT_APP_appId
 };
 
 // Initialize Firebase
