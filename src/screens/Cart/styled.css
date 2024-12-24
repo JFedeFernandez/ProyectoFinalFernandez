@@ -1,0 +1,43 @@
+.cart {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.checkout-button {
+    background-color: #000; 
+    color: #fff; 
+    border: 2px solid #000; 
+    border-radius: 5px; 
+    padding: 10px 20px; 
+    font-size: 16px; 
+    font-weight: bold; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease, transform 0.2s ease; 
+    text-align: center; 
+    display: inline-block;
+}
+
+
+.checkout-button:hover {
+    background-color: #555; 
+    border-color: #555; 
+}
+
+
+.checkout-button:active {
+    background-color: #333; 
+    border-color: #333; 
+    transform: scale(0.98); 
+}
+
+
+.checkout-button:disabled {
+    background-color: #ccc; 
+    color: #666; 
+    border-color: #ccc; 
+    cursor: not-allowed; 
+}
