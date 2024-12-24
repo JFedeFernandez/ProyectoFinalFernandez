@@ -1,0 +1,32 @@
+.buttons-count {
+    background-color: #000; 
+    color: #fff; 
+    border: 2px solid #000; 
+    border-radius: 5px; 
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.buttoms-count {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; 
+}
+
+.buttons-count:hover {
+    background-color: #fff; 
+    color: #000; 
+}
+
+.number-count {
+    font-size: 20px;
+    font-weight: bold;
+    color: #000; 
+    margin: 0; 
+    text-align: center;
+}

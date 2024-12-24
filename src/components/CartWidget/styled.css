@@ -1,0 +1,13 @@
+.cart-button {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+
+.cart-button svg {
+    flex:1;
+}
+
+.cart-button p {
+    flex:1;
+}
