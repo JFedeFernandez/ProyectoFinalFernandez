@@ -44,5 +44,6 @@
 @media only screen and (max-width: 1015px) and (min-width: 390px) {
     .itemListContainer {
         align-self: center;
+        width: 380px;
     }
 }

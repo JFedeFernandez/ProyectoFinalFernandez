@@ -186,3 +186,41 @@
         line-height: 24px;
     }
 }
+
+@media only screen and (max-width: 1016px) and (min-width: 390px) {
+    .item-card {
+        box-sizing: border-box;
+        background: none 0% 0% / auto repeat scroll padding-box border-box rgba(0, 0, 0, 0);
+        color: rgb(0, 0, 0);
+        align-content: flex-start;
+        flex-wrap: wrap;
+        position: relative;
+        width: 380px;
+        display: flex;
+        font-family: proxima-nova, sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+    }
+    
+    .img-card {
+        height: 500px;
+        max-width: 100%;
+        box-sizing: border-box;
+        background: none 0% 0% / auto repeat scroll padding-box border-box rgba(0, 0, 0, 0);
+        color: rgba(189, 149, 76, 0.94);
+        break-inside: auto;
+        border-radius: 0px;
+        display: inline-block;
+        vertical-align: middle;
+        width: 380px;
+        text-decoration-color: rgba(189, 149, 76, 0.94);
+        text-decoration-style: solid;
+        text-decoration-thickness: auto;
+        text-align: center;
+        font-family: proxima-nova, sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+    }
+}
