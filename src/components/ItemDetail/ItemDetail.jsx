@@ -47,7 +47,7 @@ export default function ItemDetail() {
                     <ClipLoader size={100}/>
                 </div>
             ) : (
-                <>
+                <div className="card-container">
                     <div className="card-image-container">
                         <img className="card-image" src={product.image}/>
                     </div>
@@ -59,7 +59,7 @@ export default function ItemDetail() {
                         <p>En Stock: {product.stock}</p>
                         <button onClick={hiddenClick} disabled={!showItemCount} className="buttom-cart">Agregar al carrito</button>
                     </div>
-                </>
+                </div>
             )}
         </>
     );

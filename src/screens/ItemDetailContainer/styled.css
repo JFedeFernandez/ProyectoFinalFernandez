@@ -1,4 +1,16 @@
 .itemDetailContainer {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    place-items: center; /* Centrar horizontal y verticalmente */
+    height: 100vh; /* Ocupar toda la altura de la ventana */
+    grid-gap: 20px; /* Espaciado entre tarjetas */
+    margin: 0;
+}
+
+@media only screen and (max-width: 1016px) and (min-width: 390px){
+    .itemDetailContainer {
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        width: 85%;
+    }
 }

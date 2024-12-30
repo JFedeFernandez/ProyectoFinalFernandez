@@ -1,10 +1,25 @@
+.card-container {
+    box-sizing: border-box;
+    background: none 0% 0% / auto repeat scroll padding-box border-box rgba(0, 0, 0, 0);
+    color: rgb(0, 0, 0);
+    align-self: auto;
+    flex: 0 1 auto;
+    order: 0;
+    position: relative;
+    padding: 10px;
+    font-family: proxima-nova, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    display: flex;
+    justify-self: center;
+}
 .card-image {
-    width: 65%;
+    width: 500px;
     height: auto;
 }
 
 .card-detail {
-    display: flex;
     flex-direction: column;
     text-transform: uppercase;
     box-sizing: border-box;
@@ -13,7 +28,7 @@
     align-content: flex-start;
     flex-wrap: wrap;
     position: relative;
-    width: 660px;
+    width: 100%;
     display: flex;
     padding: 32px;
     font-family: proxima-nova, sans-serif;
@@ -21,6 +36,7 @@
     font-weight: 400;
     line-height: 24px;
     justify-content: center;
+    width: 500px;
 }
 
 .card-detail h2 {
@@ -51,4 +67,32 @@
     border-radius: 5px; 
     cursor: pointer; 
     transition: all 0.3s ease; 
+}
+
+@media only screen and (max-width: 1219px) and (min-width: 1016px) {
+    .card-detail {
+        padding: 0px 40px;
+        width: 100%;
+    }
+
+    .card-image {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media only screen and (max-width: 1016px) and (min-width: 390px){
+    .card-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card-image {
+        width: 380px;
+        height: auto;
+    }
+        .card-detail {
+        padding: 0px 40px;
+        width: 100%;
+    }
 }
